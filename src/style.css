@@ -66,6 +66,16 @@
     flex-direction: column;
     width: 500px;
     border-radius: 10px;
+    animation:flipMain 0.5s;
+}
+@keyframes flipMain {
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+    
 }
 
 .main h2{
