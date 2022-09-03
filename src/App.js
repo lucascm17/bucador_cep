@@ -10,7 +10,7 @@ function App() {
 
   async function showInput() {
     if (input === "") {
-      alert("coloque algum cep");
+      alert("Digite algum CEP");
       return;
     }
     try {
@@ -18,7 +18,7 @@ function App() {
       setCep(response.data);
       setInput("");
     } catch {
-      alert("ops erro ao buscar...");
+      alert("Ops! erro ao buscar, verifique se o CEP está correto.");
       setInput("");
     }
   }
